@@ -9,38 +9,198 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-  <h1>Who is that Pokémon?</h1>
 
-  <h2>Select your Pokémon</h2>
-  
-  <h3>Bulbasaur</h3>
+  <div>
 
-  <div class="tag blug-tag">
-    <div class="icon">
-      <img src="img/bag-red.svg" alt="">
+    <div class="tag blue-tag">
+      <div class="icon">
+        <img src="./img/bag-red.svg" alt="">
+      </div>
+      <span>Pokedex</span>
     </div>
-    <span>pokedex</span>
+
+    <div class="search">
+      <input type="text" placeholder="Search name or code">
+      <button type="button">
+        <img src="./img/icon-search.svg" alt="Icone de pesquisa">
+      </button>
+    </div>
+
+    <button class="typer-filter ghost">
+      <div class="icon">
+        <img src="./img/icon-types/ghost.svg" alt="">
+      </div>
+      <span>Ghost</span>
+    </button>
+
+    <button class="typer-filter rock">
+      <div class="icon">
+        <img src="./img/icon-types/rock.svg" alt="">
+      </div>
+      <span>Rock</span>
+    </button>
+
+    <button class="card-pokemon js-open-details-pokemon grass">
+      <div class="image">
+        <img src="img/bulbasaur.svg" alt="">
+      </div>
+      <div class="info">
+        <div class="text">
+          <span>#0001</span>
+          <h3>Bulbassaur</h3>
+        </div>
+
+        <div class="icon">
+          <img src="./img/icon-types/grass.svg" alt="">
+        </div>
+      </div>
+    </button>
+
+    <span class="tag-type bug">Bug</span>
+
+    <button class="btn-load-more">
+      Load more Pokémons
+    </button>
+
+
   </div>
 
-  
+  <div class="modal" type-pokemon-modal="grass">
+    <div class="overlay"></div>
+    <div class="box">
+      <button class="close js-close-modal-details-pokemon">
+        <img src="./img/close.svg" alt="Close">
+      </button>
+      <div class="left-content">
+        <div class="icon">
+          <img src="./img/icon-types/grass.svg" alt="">
+        </div>
 
-  <button class="type-filter fire">
-    <div class="icon">
-      <img src="img/icon-types/fire.svg" alt="">
+        <div class="image">
+          <img src="./img/bulbasaur.svg" alt="">
+        </div>
+      </div>
+      <div class="right-content">
+        <div class="name">
+          <h2>Bulbasaur</h2>
+          <span>#0001</span>
+        </div>
+        <ul class="type">
+          <li><span class="tag-type grass">Grass</span></li>
+          <li><span class="tag-type poison">Poison</span></li>
+        </ul>
+
+        <ul class="info">
+          <li>
+            <span>Height</span>
+            <strong>0.7m</strong>
+          </li>
+          <li>
+            <span>Weight</span>
+            <strong>6.9kg</strong>
+          </li>
+          <li>
+            <span>Abilities</span>
+            <strong>Overgrow</strong>
+          </li>
+        </ul>
+
+        <div class="weak">
+          <h4>Weaknesses</h4>
+          <ul>
+            <li><span class="tag-type fire">Fire</span></li>
+            <li><span class="tag-type psychic">Psychic</span></li>
+            <li><span class="tag-type flying">Flying</span></li>
+            <li><span class="tag-type ice">Ice</span></li>
+          </ul>
+        </div>
+
+        <div class="stats">
+          <h5>Stats</h5>
+          <div class="all">
+            <div class="item">
+              <span>HP</span>
+              <div class="bar-status">
+                <div class="bar"></div>
+                <ul class="separator">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <span>Attack</span>
+              <div class="bar-status">
+                <div class="bar"></div>
+                <ul class="separator">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <span>Defense</span>
+              <div class="bar-status">
+                <div class="bar"></div>
+                <ul class="separator">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <span>Sp. attack</span>
+              <div class="bar-status">
+                <div class="bar"></div>
+                <ul class="separator">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <span>Sp. defense</span>
+              <div class="bar-status">
+                <div class="bar"></div>
+                <ul class="separator">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item">
+              <span>Speed</span>
+              <div class="bar-status">
+                <div class="bar"></div>
+                <ul class="separator">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <span>Fire</span>
-  </button>
-
- 
-
-  <span class="tag-type fire">Fire</span>
-
-
-
-
-
-
-
+  </div>
+  
   <script src="js/plugins.js"></script>
   <script src="js/all.js"></script>
 </body>
